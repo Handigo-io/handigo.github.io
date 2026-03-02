@@ -15,16 +15,16 @@
 
 .about-gesture {
   position: absolute;
-  width: 130px;
+  width: 170px;
   height: auto;
   filter: drop-shadow(0 16px 22px rgba(30, 15, 70, 0.18));
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .ag1 { top: 0; left: 20px; transform: rotate(-6deg); }
-.ag2 { top: 100px; left: 150px; transform: rotate(8deg); width: 115px; }
-.ag3 { top: 190px; left: 0; transform: rotate(-8deg); width: 120px; }
-.ag4 { top: 260px; left: 160px; transform: rotate(6deg); width: 125px; }
+.ag2 { top: 100px; left: 150px; transform: rotate(8deg); width: 170px; }
+.ag3 { top: 190px; left: 0; transform: rotate(-8deg); width: 170px; }
+.ag4 { top: 260px; left: 160px; transform: rotate(6deg); width: 170px; }
 
 .about-text {
   position: relative;
@@ -96,5 +96,64 @@
 
   .about-paragraph {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px){
+
+  .about-grid{
+    grid-template-columns: 380px 1fr;
+    gap: 30px;
+  }
+
+  .about-gestures{
+    width: 380px;
+    height: 360px;
+  }
+
+  .about-gesture{
+    width: 150px;
+  }
+
+  .ag2{ left: 130px; }
+  .ag4{ left: 140px; }
+
+  .about-title{
+    font-size: 28px;
+  }
+
+  .about-paragraph{
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1440px){
+
+  .about-grid{
+    grid-template-columns: 520px 1fr;
+    gap: 70px;
+  }
+
+  .about-gestures{
+    width: 520px;
+    height: 460px;
+  }
+
+  .about-gesture{
+    width: 200px;
+  }
+
+  .ag1{ top: 0; left: 40px; }
+  .ag2{ top: 120px; left: 220px; }
+  .ag3{ top: 240px; left: 20px; }
+  .ag4{ top: 330px; left: 240px; }
+
+  .about-title{
+    font-size: 28px;
+  }
+
+  .about-paragraph{
+    font-size: 18px;
+    line-height: 1.9;
   }
 }

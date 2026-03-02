@@ -57,3 +57,39 @@
   .hero-image-wrap{ margin-top: -70px; }
   .hero-desc{ font-size: 20px; text-align: center; }
 }
+
+/* Small laptops */
+@media (min-width: 1024px) and (max-width: 1366px){
+
+  .hero-image{
+    width: 520px;
+  }
+
+  .hero-desc{
+    font-size: 22px;
+    max-width: 560px;
+  }
+
+  .gesture{
+    width: 210px;
+  }
+
+
+}
+
+@media (min-width: 1440px){
+
+  .hero-image{
+    width: 660px;
+  }
+
+  .hero-desc{
+    font-size: 24px;
+    max-width: 720px;
+  }
+
+  .gesture{
+    width: 270px;
+  }
+
+}

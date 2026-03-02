@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Handigo</title>
-  <link rel="icon" href="assets/images/handlogo3.png" type="image/png">
+  <link rel="icon" href="assets/images/side.png" type="image/png">
 
   <!-- Epilogue (menu) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +30,7 @@
         <a class="brand" href="#home" aria-label="Handigo home">
           <img class="brand-img" src="assets/images/logo.png" alt="Handigo logo">
         </a>
+      </div>
 
         <nav class="nav" aria-label="Primary navigation">
           <a href="#home" class="nav-link">
@@ -52,13 +53,14 @@
             Installation
           </a>
         </nav>
+      <div class="manual-div">
+        <a href="assets/files/Handigo_Manual.pdf"
+          class="nav-link manual-download"
+          download
+          aria-label="Download User Manual">
+          <i class="fa-solid fa-file-lines"></i>
+        </a>
       </div>
-
-      <div class="actions">
-        <button class="menu-btn" id="menuBtn"
-          aria-label="Open menu" aria-expanded="false">☰</button>
-      </div>
-    </div>
 
     <div class="mobile-nav" id="mobileNav">
       <a href="#home">Home</a>
@@ -73,22 +75,22 @@
     <!-- HOME -->
     <section id="home" class="home">
       <div class="container">
-        <div class="hero-image-wrap">
+        <div class="hero-image-wrap reveal reveal-up">
           <img class="hero-image" src="assets/images/hero-handigo.png" alt="Handigo hero">
         </div>
 
         <p class="hero-desc"><span id="typing-text"></span></p>
 
-        <div class="hero-actions">
+        <div class="hero-actions reveal reveal-up delay-1">
           <a class="btn btn-primary" href="#install">Download Now</a>
           <a class="btn btn-secondary" href="#about">Learn more</a>
         </div>
 
         <div class="gesture-strip" aria-label="Gesture examples">
-          <img class="gesture g1" src="assets/images/gesture-1.png" alt="gesture 1">
-          <img class="gesture g2" src="assets/images/gesture-2.png" alt="gesture 2">
-          <img class="gesture g3" src="assets/images/gesture-3.png" alt="gesture 3">
-          <img class="gesture g4" src="assets/images/gesture-4.png" alt="gesture 4">
+          <img class="gesture g1 reveal reveal-left" src="assets/images/gesture-1.png" alt="gesture 1">
+          <img class="gesture g2 reveal reveal-left delay-1" src="assets/images/gesture-2.png" alt="gesture 2">
+          <img class="gesture g3 reveal reveal-right" src="assets/images/gesture-3.png" alt="gesture 3">
+          <img class="gesture g4 reveal reveal-right delay-1" src="assets/images/gesture-4.png" alt="gesture 4">
         </div>
       </div>
     </section>
@@ -98,7 +100,7 @@
       <div class="container about-grid">
 
         <!-- LEFT: still gestures -->
-        <div class="about-gestures" aria-label="Hand gesture images">
+        <div class="about-gestures reveal reveal-left" aria-label="Hand gesture images">
           <img class="about-gesture ag1" src="assets/images/gesture-1.png" alt="gesture 1">
           <img class="about-gesture ag2" src="assets/images/gesture-2.png" alt="gesture 2">
           <img class="about-gesture ag3" src="assets/images/gesture-3.png" alt="gesture 3">
@@ -106,7 +108,7 @@
         </div>
 
         <!-- RIGHT: text -->
-        <div class="about-text">
+        <div class="about-text reveal reveal-right">
           <h2 class="about-title">ABOUT HANDIGO</h2>
 
           <p class="about-paragraph top">
@@ -127,11 +129,11 @@
 
     <section id="guide" class="guide">
       <div class="container">
-        <h2 class="guide-title">Installation Guide & Terms</h2>
+        <h2 class="guide-title reveal reveal-up">Installation Guide & Terms</h2>
 
         <div class="guide-cards">
           <!-- TERMS & CONDITIONS CARD -->
-          <article class="guide-card">
+          <article class="guide-card reveal reveal-up">
             <div class="guide-gesture">
               <i class="fa-solid fa-file-contract fa-2x" style="color:#8A2BE2;"></i>
             </div>
@@ -150,7 +152,7 @@
           </article>
 
           <!-- INSTALLATION GUIDE CARD -->
-          <article class="guide-card">
+          <article class="guide-card reveal reveal-up">
             <div class="guide-gesture">
               <i class="fa-solid fa-book-open fa-2x" style="color:#8A2BE2;"></i>
             </div>
@@ -184,10 +186,10 @@
     <!-- INSTALLATION + FOOTER -->
     <section id="install" class="install">
       <div class="container">
-        <h2 class="install-title">Installation</h2>
+        <h2 class="install-title reveal reveal-up">Installation</h2>
 
         <p class="install-note">⚠ Please check the box above to enable installation.</p>
-        <div class="install-action disabled" aria-label="Download Handigo installer">
+        <div class="install-action disabled reveal reveal-up delay-1" aria-label="Download Handigo installer">
           
           <img class="install-icon" src="assets/images/github-icon.png" alt="GitHub icon">
           <a class="install-btn" href="https://github.com/Handigo-io/Installation/releases/latest/download/app.exe" target="_blank" rel="noopener">
@@ -210,10 +212,14 @@
                 <img src="assets/images/github-icon.png" alt="Email">
               </a>
 
-              <a href="#" class="footer-link">Get in Touch</a>
+              <p class="footer-link">Get in Touch</p>
 
-              <a href="#" aria-label="Social" class="icon-btn">
-                <img src="assets/images/mail.png.png" alt="Social">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=handigo1010@gmail.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Email" 
+                class="icon-btn">
+                <img src="assets/images/mail.png" alt="Email">
               </a>
             </div>
           </div>

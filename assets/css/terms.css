@@ -57,3 +57,65 @@
   .terms-card{ padding: 20px 16px; }
   .terms h2{ font-size: 24px; }
 }
+
+/* Terms page - small laptops */
+@media (min-width: 1024px) and (max-width: 1366px){
+
+  .terms{
+    padding: 40px 20px 50px;
+  }
+
+  .terms-card{
+    max-width: 760px;
+    padding: 24px 18px;
+  }
+
+  .terms h2{
+    font-size: 26px;
+  }
+
+  .terms h3{
+    font-size: 15px;
+  }
+
+  .terms p,
+  .terms li{
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .terms .updated{
+    font-size: 11px;
+  }
+}
+
+/* Terms page - large laptops */
+@media (min-width: 1440px){
+
+  .terms{
+    padding: 60px 40px 80px;
+  }
+
+  .terms-card{
+    max-width: 1000px;
+    padding: 36px 28px;
+  }
+
+  .terms h2{
+    font-size: 34px;
+  }
+
+  .terms h3{
+    font-size: 18px;
+  }
+
+  .terms p,
+  .terms li{
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .terms .updated{
+    font-size: 13px;
+  }
+}
